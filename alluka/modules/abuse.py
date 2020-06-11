@@ -1,8 +1,8 @@
 import random
 from telegram.ext import run_async, Filters
 from telegram import Message, Chat, Update, Bot, MessageEntity
-from tg_bot import dispatcher
-from tg_bot.modules.disable import DisableAbleCommandHandler
+from alluka import dispatcher
+from alluka.modules.disable import DisableAbleCommandHandler
 
 SFW_STRINGS = (
     "പോടാ പട്ടി",
@@ -21,6 +21,7 @@ SFW_STRINGS = (
     " നിന്റെ കുഞ്ഞമ്മേടെ നായർ",
     "നിന്റെ അപ്പൂപ്പനോട്‌ പോയി പറ",
     "പോ മലരേ"
+    "ഓട്രാ കണ്ടം വഴി"
   )
 
 @run_async
