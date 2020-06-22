@@ -4,8 +4,8 @@
 # from telegram import Update, Bot, ParseMode
 # from telegram.ext import run_async
 
-# from lynda import dispatcher
-# from lynda.modules.disable import DisableAbleCommandHandler
+# from alluka import dispatcher
+# from alluka.modules.disable import DisableAbleCommandHandler
 
 # @run_async
 # def ddlc(bot: Bot, update: Update):
