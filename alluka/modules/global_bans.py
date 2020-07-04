@@ -9,12 +9,12 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import SaitamaRobot.modules.sql.global_bans_sql as sql
-from SaitamaRobot import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS, STRICT_GBAN, GBAN_LOGS, SUPPORT_CHAT
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin, support_plus
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from SaitamaRobot.modules.helper_funcs.misc import send_to_list
-from SaitamaRobot.modules.sql.users_sql import get_all_chats
+import alluka.modules.sql.global_bans_sql as sql
+from alluka import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, SUPPORT_USERS, TIGER_USERS, WHITELIST_USERS, STRICT_GBAN, GBAN_LOGS, SUPPORT_CHAT
+from alluka.modules.helper_funcs.chat_status import user_admin, is_user_admin, support_plus
+from alluka.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from alluka.modules.helper_funcs.misc import send_to_list
+from alluka.modules.sql.users_sql import get_all_chats
 
 GBAN_ENFORCE_GROUP = 6
 
