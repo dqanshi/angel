@@ -34,3 +34,5 @@ googletrans
 jikanpy
 speedtest-cli
 hurry.filesize
+telethon
+Pyrogram 
