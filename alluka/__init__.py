@@ -79,6 +79,8 @@ if ENV:
     LASTFM_API_KEY = os.environ.get('LASTFM_API_KEY',None)
     LYDIA_API = os.environ.get('LYDIA_API',None)
     API_WEATHER  = os.environ.get('API_OPENWEATHER',False) 
+    TELETHON_ID = int(os.environ.get("APP_ID", None))
+    TELETHON_HASH = os.environ.get("APP_HASH", None)
 
 else:
     from alluka.config import Development as Config
@@ -135,6 +137,8 @@ else:
     LASTFM_API_KEY = Config.LASTFM_API_KEY
     LYDIA_API = Config.LYDIA_API
     API_OPENWEATHER = Config.API_OPENWEATHER
+    TELETHON_HASH = Config.TELETHON_HASH
+    TELETHON_ID = Config.TELETHON_ID
 
     
     
@@ -150,6 +154,12 @@ DEV_USERS = list(DEV_USERS)
 WHITELIST_USERS = list(WHITELIST_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
 SPAMMERS = list(SPAMMERS)
+
+# Telethon
+api_id = TELETHON_ID
+api_hash = TELETHON_HASH
+Client = TelegramClient("alluka", api_id, api_hash)
+
 
 # Load at end to ensure all prev variables have been set
 from alluka.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
