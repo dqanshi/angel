@@ -81,8 +81,8 @@ if ENV:
     LASTFM_API_KEY = os.environ.get('LASTFM_API_KEY',None)
     LYDIA_API = os.environ.get('LYDIA_API',None)
     API_WEATHER  = os.environ.get('API_OPENWEATHER',False) 
-    TELETHON_ID = int(os.environ.get("APP_ID", None))
-    TELETHON_HASH = os.environ.get("APP_HASH", None)
+    TELETHON_ID = int(os.environ.get("APP_ID", 'None'))
+    TELETHON_HASH = os.environ.get("APP_HASH", 'None')
 
 else:
     from alluka.config import Development as Config
